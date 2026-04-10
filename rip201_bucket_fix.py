@@ -568,7 +568,7 @@ def get_verified_multiplier(
     if base <= 1.0:
         return 1.0
 
-    DECAY_RATE = 0.06  # mirrors rip_200_round_robin_1cpu1vote.py
+    DECAY_RATE = 0.15  # mirrors rip_200_round_robin_1cpu1vote.py
     vintage_bonus = base - 1.0
     aged_bonus = max(0.0, vintage_bonus * (1 - DECAY_RATE * chain_age_years))
 

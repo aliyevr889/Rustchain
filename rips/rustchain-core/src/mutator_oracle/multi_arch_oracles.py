@@ -99,11 +99,11 @@ class CPUArchitecture(Enum):
             return 1.0  # 1x - AMX mutator capability
 
         # Standard age-based tiers for rare architectures
-        age = 2025 - self.release_year
+        age = 2026 - self.release_year
         if age >= 40: return 3.5   # Ancient (68k 1979, MIPS 1985)
-        if age >= 32: return 3.0   # Sacred (Alpha 1992, SPARC 1987)
-        if age >= 20: return 2.5   # Vintage (G3, G4, G5, x86-64)
-        if age >= 12: return 2.0   # Classic (older x86)
+        if age >= 32: return 3.0   # Sacred (Alpha 1992, SPARC 1987, Pentium 1993)
+        if age >= 20: return 2.5   # Vintage (G3, G4, x86-64)
+        if age >= 12: return 2.0   # Classic (G5 2003, older x86)
         return 1.0                  # Modern
 
 @dataclass

@@ -129,7 +129,7 @@ entropy_data = {
 | Node | Architecture | Antiquity | Bonus |
 |------|-------------|-----------|-------|
 | G4 Mirror Door | PowerPC 7455 | 2003 | 2.5x |
-| G5 Dual 2.0 | PowerPC 970 | 2004 | 2.5x |
+| G5 Dual 2.0 | PowerPC 970 | 2004 | 2.0x |
 | PowerBook G4 | PowerPC 7447 | 2005 | 2.5x |
 | Sophia Node | x86-64 | 2018 | 1.0x |
 | Gaming PC | x86-64 | 2021 | 1.0x |
@@ -464,18 +464,18 @@ def antiquity_bonus(self) -> float:
         return 1.0  # 1x - AMX mutator capability
 
     # Standard age-based tiers
-    age = 2025 - self.release_year
+    age = 2026 - self.release_year
 
-    if age >= 40:  # Released before 1985
+    if age >= 40:  # Released before 1986
         return 3.5  # Ancient tier
 
-    if age >= 32:  # Released before 1993
+    if age >= 32:  # Released before 1994
         return 3.0  # Sacred tier
 
-    if age >= 20:  # Released before 2005
-        return 2.5  # Vintage tier (G3, G4, G5, early x86-64)
+    if age >= 20:  # Released before 2006
+        return 2.5  # Vintage tier (G3, G4, early x86-64)
 
-    if age >= 12:  # Released before 2013
+    if age >= 12:  # Released before 2014
         return 2.0  # Classic tier
 
     return 1.0  # Modern tier
@@ -486,9 +486,9 @@ def antiquity_bonus(self) -> float:
 | Tier | Age | Bonus | Example Architectures |
 |------|-----|-------|----------------------|
 | **ANCIENT** | 40+ years | 3.5x | 68k (1979), MIPS (1985) |
-| **SACRED** | 32+ years | 3.0x | SPARC (1987), Alpha (1992), PA-RISC (1986) |
-| **VINTAGE** | 20+ years | 2.5x | PPC G3 (1997), G4 (1999), G5 (2003), x86-64 (2003) |
-| **CLASSIC** | 12+ years | 2.0x | Older x86, RISC-V |
+| **SACRED** | 32+ years | 3.0x | SPARC (1987), Alpha (1992), PA-RISC (1986), Pentium (1993) |
+| **VINTAGE** | 20+ years | 2.5x | PPC G3 (1997), G4 (1999), x86-64 (2003), Alpha 21264 (2000) |
+| **CLASSIC** | 12+ years | 2.0x | G5 (2003), Older x86, RISC-V |
 | **MODERN** | < 12 years | 1.0x | New x86-64, M1/M2 (AMX capable) |
 | **PENALTY** | Any ARM | 0.1x | ARM32, ARM64 (bot farm risk) |
 
