@@ -31,9 +31,9 @@ The era and base multiplier are determined by the **start year** of the CPU
 | Era | Introduction year | Base bounty (RTC) | Example CPUs |
 |-----|-------------------|--------------------|--------------|
 | Ultra-Vintage | < 1985 | 300 | DEC VAX (1977), Inmos Transputer (1984), Fairchild Clipper (1986) |
-| Early Vintage | 1985 – 1989 | 200 | Intel 386 (1985), MIPS R3000 (1988), Motorola 68030 (1987) |
-| Mid Vintage | 1990 – 1994 | 150 | Intel 486 (1989→era 1985-1989), Pentium (1993), PowerPC 601 (1993) |
-| Late Vintage | 1995 – 1999 | 100 | Pentium II (1997), AMD K6 (1997), Cyrix MII (1998) |
+| Early Vintage | 1985 – 1989 | 200 | Intel 386 (1985), Intel 486 (1989), Motorola 68030 (1987) |
+| Mid Vintage | 1990 – 1994 | 150 | Pentium (1993), PowerPC 601 (1993), MIPS R4000 (1991) |
+| Late Vintage | 1995 – 1999 | 100 | Pentium II (1997), AMD K6 (1997), Cyrix 6x86 (1996) |
 
 > **Note:** The era is based on CPU *introduction* year, not manufacture date
 > of your specific chip. For example, an Intel 486DX2 produced in 1993 still
@@ -57,6 +57,8 @@ The era and base multiplier are determined by the **start year** of the CPU
 | `pentium_ii` | 2.2× |
 | `pentium_iii` | 2.0× |
 | `amd_k6` / `k6` | 2.3× |
+| `cyrix_6x86` | 2.5× |
+| `dreamcast_sh4` | 2.3× |
 
 > The full list is in `node/rip_200_round_robin_1cpu1vote.py`.
 > Multipliers decay linearly over the blockchain's lifetime (15% per year),
