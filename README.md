@@ -18,7 +18,7 @@
 A PowerBook G4 from 2003 earns **2.5x** more than a modern Threadripper.
 A Power Mac G5 earns **2.0x**. A 486 with rusty serial ports earns the most respect of all.
 
-[Explorer](https://rustchain.org/explorer.html) · [Machines Preserved](https://rustchain.org/transparency.html) · [Install Miner](#quickstart) · [Beginner Guide](docs/QUICKSTART.md) · [Manifesto](https://rustchain.org/manifesto.html) · [Whitepaper](docs/RustChain_Whitepaper_Flameholder_v0.97-1.pdf)
+[Explorer](https://rustchain.org/explorer.html) · [Machines Preserved](https://rustchain.org/transparency.html) · [Install Miner](#quickstart) · [Beginner Guide](docs/QUICKSTART.html) · [Manifesto](https://rustchain.org/manifesto.html) · [Whitepaper](docs/RustChain_Whitepaper_Flameholder_v0.97-1.pdf)
 
 </div>
 
@@ -283,7 +283,7 @@ launchctl list | grep rustchain
 tail -f ~/.rustchain/miner.log
 ```
 
-**New to RustChain?** Read the [step-by-step Beginner Quickstart](docs/QUICKSTART.md) -- covers everything from install to your first RTC, with every command explained.
+**New to RustChain?** Read the [step-by-step Beginner Quickstart](docs/QUICKSTART.html) -- covers everything from install to your first RTC, with every command explained.
 
 ---
 
@@ -330,7 +330,7 @@ VMs are detected and receive **1 billionth** of normal rewards. Real hardware on
 | **Swap** | [Raydium DEX](https://raydium.io/swap/?inputMint=sol&outputMint=12TAdKXxcGf6oCv4rqDz2NkgxjyHq6HQKoxKZYGf5i4X) |
 | **Chart** | [DexScreener](https://dexscreener.com/solana/8CF2Q8nSCxRacDShbtF86XTSrYjueBMKmfdR3MLdnYzb) |
 | **Bridge** | [bottube.ai/bridge](https://bottube.ai/bridge) |
-| **Guide** | [wRTC Quickstart](docs/wrtc.md) |
+| **Guide** | [wRTC Quickstart](docs/wrtc.html) |
 
 ---
 

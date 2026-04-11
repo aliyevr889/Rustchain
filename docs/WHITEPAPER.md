@@ -474,7 +474,8 @@ Hardware rewards are based on **rarity + preservation value**, not just age:
 
 | Architecture | Years | Base Multiplier |
 |--------------|-------|-----------------|
-| Haswell-Skylake | 2013-2017 | 1.05× |
+| Haswell | 2013-2015 | 1.1× |
+| Broadwell-Skylake | 2014-2017 | 1.05× |
 | Coffee Lake+ | 2017-present | 0.8× |
 | AMD Zen/Zen+ | 2017-2019 | 1.1× |
 | AMD Zen 2/3/4/5 | 2019-present | 0.8× |
